@@ -1,0 +1,22 @@
+# ❌ UNOPTIMIZED VERSION - Don't use this!
+# Problems: 
+# - Uses full node image (large)
+# - No layer caching optimization
+# - Includes dev dependencies
+# - Runs as root user
+
+FROM node:18
+
+# Copy everything first (breaks caching)
+COPY . /app
+
+WORKDIR /app
+
+# Install ALL dependencies including dev
+RUN npm install
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
+
+# Result: ~1GB image size 😱
