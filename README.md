@@ -1,5 +1,11 @@
 # Weather API - Docker Optimized 🌤️
 
+# Weather API - Docker Optimized 🌤️
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+
 A simple Express.js weather API demonstrating Docker optimization techniques including multi-stage builds.
 
 ## Features
