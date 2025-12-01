@@ -11,7 +11,7 @@ FROM node:18-alpine AS runner
 WORKDIR /app
 
 COPY package*.json ./
-RUN RUN npm install --production && npm cache clean --force
+RUN npm install --production && npm cache clean --force
 
 COPY --chown=node:node app.js ./
 
